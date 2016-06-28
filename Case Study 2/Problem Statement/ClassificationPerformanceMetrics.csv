@@ -1,0 +1,14 @@
+Account No,26435791004,
+Neural Network,,
+Overall Error,5%,
+,,
+,Class1,Class2
+Class1,67,0
+Class2,0,5
+,,
+Classification Tree,,
+Overall Error,5%,
+,,
+,Class1,Class2
+Class1,67,0
+Class2,0,5
