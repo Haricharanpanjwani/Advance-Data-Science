@@ -1,0 +1,54 @@
+
+Presentation Link
+ http://prezi.com/oo6hsnr-hs35/?utm_campaign=share&utm_medium=copy
+
+https://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/getting_started/gs-full-nodejs.shtml
+
+Obtain a Bluemix ID: https://console.ng.bluemix.net/
+
+Cloud Foundry: https://github.com/cloudfoundry/cli?cm_mc_uid=70500961251414634213050&cm_mc_sid_50200000=1465589467#downloads
+
+commands
+brew tap cloudfoundry/tap
+brew install cf-cli
+
+node.js install: https://nodejs.org/en/?cm_mc_uid=70500961251414634213050&cm_mc_sid_50200000=1465589467
+
+GitHub Repo IBM Watson API
+https://github.com/watson-developer-cloud?cm_mc_uid=70500961251414634213050&cm_mc_sid_50200000=1465589467
+
+obtain the source code: https://github.com/watson-developer-cloud/tone-analyzer-nodejs
+
+Modify the manifest.yml
+	name attribute must be unique
+	change service name according to the plan
+
+Commands to deploy the application
+
+cf api https://api.ng.bluemix.net
+
+cf login -u username -p password
+
+cf marketplace
+
+cf create-service service-name service-plan service-instance-name
+cf create-service tone_analyzer standard tone-analyzer-standard
+
+cf push tone-analyzer-ads2016
+
+
+Commands to run the application
+
+cf env tone-analyzer-ads2016: get the info to run the application locally
+
+modify app.js from the output
+
+npm install: to install the required dependency
+
+node server.js
+
+node app.js
+
+
+To run online
+http://tone-analyzer-ads2016.mybluemix.net/
