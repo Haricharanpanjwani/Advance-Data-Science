@@ -1,0 +1,52 @@
+"Internet Ads eater"
+"
+"
+"Confusion Matrix for Logistic Regression"
+"0" 500 12
+"1" 30 84
+"Confusion Matrix Accuracy"
+"Accuracy" 0.932907348242812
+"Kappa" 0.760048187493155
+"AccuracyLower" 0.910389332934723
+"AccuracyUpper" 0.95122118216918
+"AccuracyNull" 0.846645367412141
+"AccuracyPValue" 3.08429549000826e-11
+"McnemarPValue" 0.00871191296237958
+"
+"
+"Overall Error of Logistic Regression"
+"1" 0.0670926517571885
+"
+"
+"Confusion Matrix for Decision Tree"
+526 13
+4 83
+"Confusion Matrix Accuracy"
+0.972843450479233
+0.891246142211867
+0.956874949512682
+0.984102464213466
+0.846645367412141
+1.24251020752918e-25
+0.0523450632731632
+"
+"
+"Overall Error of Decision Tree"
+0.0271565495207667
+"
+"
+"Confusion Matrix for Neural Network"
+650 17
+14 102
+"Confusion Matrix Accuracy"
+0.960408684546616
+0.844798813276469
+0.944271722659034
+0.972943894505723
+0.848020434227331
+2.74942738118289e-24
+0.719437544423391
+"
+"
+"Overall Error of Neural Net"
+0.0395913154533845

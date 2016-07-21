@@ -1,0 +1,52 @@
+"Defaulter of credit card"
+"
+"
+"Confusion Matrix for Logistic Regression"
+"0" 4978 807
+"1" 786 713
+"Confusion Matrix Accuracy"
+"Accuracy" 0.781301482701812
+"Kappa" 0.334416233265777
+"AccuracyLower" 0.771628407710668
+"AccuracyUpper" 0.790748914320709
+"AccuracyNull" 0.791323448654585
+"AccuracyPValue" 0.982560193946252
+"McnemarPValue" 0.616302610361244
+"
+"
+"Overall Error of Logistic Regression"
+"1" 0.218698517298188
+"
+"
+"Confusion Matrix for Decision Tree"
+4112 532
+1652 988
+"Confusion Matrix Accuracy"
+0.700164744645799
+0.285851577314256
+0.689495339149935
+0.710673737988274
+0.791323448654585
+1
+1.05713675251287e-126
+"
+"
+"Overall Error of Decision Tree"
+0.299835255354201
+"
+"
+"Confusion Matrix for Neural Network"
+4307 531
+1427 1019
+"Confusion Matrix Accuracy"
+0.731191652937946
+0.337395601540661
+0.720850589847351
+0.741347386037079
+0.78720483250961
+1
+5.74425132071915e-91
+"
+"
+"Overall Error of Neural Net"
+0.268808347062054
