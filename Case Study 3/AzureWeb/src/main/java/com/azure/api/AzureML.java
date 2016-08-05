@@ -48,8 +48,8 @@ public class AzureML {
 	    public String callDecisionJungleService(String json) {
 	    	System.out.println("calling decision jungle model: ");
 	    	
-	    	apiurl = "https://ussouthcentral.services.azureml.net/workspaces/4b54602ea43446c29c5950caa5563f70/services/38d57a81894043c69691250a23118150/execute?api-version=2.0&details=true";
-	    	apikey = "/hJikrmfUMHJZIZe/lUqGgfqHV7SAdBgNX1ENcowoKZemM6TyTtsSXQlhhvSZWfeHbhFP5+v8DFHtyCLnKgtRg==";
+	    	apiurl = "https://ussouthcentral.services.azureml.net/workspaces/4b54602ea43446c29c5950caa5563f70/services/c82d69e8862f49a68c85034c2f8b7889/execute?api-version=2.0&details=true";
+	    	apikey = "8eH3PJdWKnnRU0KPq/NANY4fgM7nAYlVnaAlZ+nD2+d8JH6lAOQmOaHJ/5hVw87eW8o/7hbYCz5UJBeg0J6tIg==";
 	    	
 	    	String input = rrsHttpPost(json);
 	    	return retrieveOutput(input);	
