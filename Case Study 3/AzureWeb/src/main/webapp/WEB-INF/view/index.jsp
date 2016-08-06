@@ -8,6 +8,7 @@
             evt = (evt) ? evt : window.event;
             var charCode = (evt.which) ? evt.which : evt.keyCode;
             if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+            	alert("You can enter only digits!")
                 return false;
             }
             return true;
@@ -113,7 +114,7 @@
               <input type="text"  class="form-control" id="latitude" value="-122." readonly="true">
             </div>
             <div class="col-sm-2">
-              <input type="number" max = 1000000 class="form-control" id="latitude" name="latitude" placeholder="Latitude" onkeypress="return isNumber(event)">
+              <input type="text" maxlength="6" class="form-control" id="latitude" name="latitude" placeholder="Latitude" onkeypress="return isNumber(event)">
             </div>
           </div>
 
@@ -123,7 +124,7 @@
               <input type="text" class="form-control" id="longitude" value="37." readonly="true">
             </div>
             <div class="col-sm-2">
-              <input type="number" max=1000000 class="form-control" id="longitude" name="longitude" placeholder="Longitude" onkeypress="return isNumber(event)">
+              <input type="text" maxlength="6" class="form-control" id="longitude" name="longitude" placeholder="Longitude" onkeypress="return isNumber(event)">
             </div>
           </div>
           
