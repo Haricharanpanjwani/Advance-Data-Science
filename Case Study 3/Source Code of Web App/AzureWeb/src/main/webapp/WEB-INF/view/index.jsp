@@ -59,6 +59,26 @@
         
         <div class="clearfix"></div>
 
+		<div class="form-group row col-lg-4 col-lg-offset-3">
+            
+            <div class="col-sm-2">
+              	<a target="_blank" href="resources/Doc.pdf"> Documentation </a>
+            </div>
+            <div class="col-sm-1">
+              	<a target="_blank" href="https://powerbi.microsoft.com/en-us/landing/signin/?ru=https%3A%2F%2Fapp.powerbi.com%2F%3Froute%3Dgroups%252fme%252freports%252fccccaf90-f196-42b8-bfe0-f98ed7452027%252fReportSection11%26noSignUpCheck%3D1"> 
+              	Power BI </a>     
+            </div>
+            <div class="col-sm-1">         	
+              	<a target="_blank" href="https://github.com/Haricharanpanjwani/Advance-Data-Science/tree/master/Case%20Study%203"> GitHub </a>
+            </div>             
+            <div class="col-sm-1">         	
+              	<a target="_blank" href="resources/presentation.pptx"> Presentation </a>
+            </div>
+            <div class="col-sm-1">         	
+              	<a target="_blank" href="resources/testdata.xlsx"> Test Data </a>
+            </div>                   
+        </div>
+
         <form method="POST" action="service">          
 
           <div class="form-group row col-lg-4 col-lg-offset-2">
