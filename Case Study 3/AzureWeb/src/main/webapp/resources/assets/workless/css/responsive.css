@@ -1,0 +1,317 @@
+/**
+ * Smartphones (portrait)
+ */
+nav#primary ul
+{
+    display: none;
+}
+
+.open
+{
+    display: block;
+}
+
+h1
+{
+    font-size: 170%;
+}
+
+h2
+{
+    font-size: 160%;
+}
+
+h3
+{
+    font-size: 150%;
+}
+
+h4
+{
+    font-size: 140%;
+}
+
+h5
+{
+    font-size: 130%;
+}
+
+h6
+{
+    font-size: 120%;
+}
+
+.one_full,
+.one_half,
+.one_third,
+.two_third,
+.one_quarter,
+.one_fifth
+{
+    width: 260px;
+}
+
+/**
+ * iPads (portrait)
+ */
+@media only screen and (min-width: 767px) {
+	nav#primary ul
+	{
+	    display: none;
+	}
+
+	.open
+	{
+	    display: block;
+	}
+
+    h1
+    {
+        font-size: 225%;
+    }
+
+    h2
+    {
+        font-size: 200%;
+    }
+
+    h3
+    {
+        font-size: 175%;
+    }
+
+    h4
+    {
+        font-size: 150%;
+    }
+
+    h5
+    {
+        font-size: 125%;
+    }
+
+    h6
+    {
+        font-size: 115%;
+    }
+
+    .one_full,
+    .one_half,
+    .one_third,
+    .two_third,
+    .one_quarter,
+    .one_fifth
+    {
+        width: 100%;
+    }
+}
+
+/**
+ * iPads (landscape)
+ */
+@media only screen and (min-width: 1023px) {
+	nav#primary ul
+    {
+        display: none;
+    }
+
+    .open
+    {
+        display: block;
+    }
+
+    h1
+    {
+        font-size: 250%;
+    }
+
+    h2
+    {
+        font-size: 225%;
+    }
+
+    h3
+    {
+        font-size: 200%;
+    }
+
+    h4
+    {
+        font-size: 175%;
+    }
+
+    h5
+    {
+        font-size: 150%;
+    }
+
+    h6
+    {
+        font-size: 125%;
+    }
+
+    .one_half
+    {
+        width: 50%;
+    }
+
+    .one_third
+    {
+        width: 33.33333%;
+    }
+
+    .two_third
+    {
+        width: 66.66666%;
+    }
+
+    .one_quarter
+    {
+        width: 25%;
+    }
+
+    .one_fifth
+    {
+        width: 20%;
+    }
+}
+
+/**
+ * Desktops
+ */
+@media only screen and (min-width: 1279px) {
+	nav#primary ul
+	{
+	    display: inline;
+	}
+
+	.open
+	{
+	    display: none;
+	}
+
+    h1
+    {
+        font-size: 275%;
+    }
+
+    h2
+    {
+        font-size: 250%;
+    }
+
+    h3
+    {
+        font-size: 225%;
+    }
+
+    h4
+    {
+        font-size: 200%;
+    }
+
+    h5
+    {
+        font-size: 150%;
+    }
+
+    h6
+    {
+        font-size: 125%;
+    }
+
+    .one_half
+    {
+        width: 50%;
+    }
+
+    .one_third
+    {
+        width: 33.33333%;
+    }
+
+    .two_third
+    {
+        width: 66.66666%;
+    }
+
+    .one_quarter
+    {
+        width: 25%;
+    }
+
+    .one_fifth
+    {
+        width: 20%;
+    }
+}
+
+/**
+ * Large Desktops
+ */
+@media only screen and (min-width: 1679px) {
+	nav#primary ul
+	{
+	    display: inline;
+	}
+
+	.open
+	{
+	    display: none;
+	}
+
+    h1
+    {
+        font-size: 275%;
+    }
+
+    h2
+    {
+        font-size: 250%;
+    }
+
+    h3
+    {
+        font-size: 225%;
+    }
+
+    h4
+    {
+        font-size: 200%;
+    }
+
+    h5
+    {
+        font-size: 150%;
+    }
+
+    h6
+    {
+        font-size: 125%;
+    }
+
+    .one_half
+    {
+        width: 50%;
+    }
+
+    .one_third
+    {
+        width: 33.33333%;
+    }
+
+    .two_third
+    {
+        width: 66.66666%;
+    }
+
+    .one_quarter
+    {
+        width: 25%;
+    }
+
+    .one_fifth
+    {
+        width: 20%;
+    }
+}

@@ -1,0 +1,25 @@
+
+body > .container {
+	max-width: 1170px;
+	margin: 0 auto;
+  margin-top: 2%;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+.text-center {
+  text-align: center;
+  margin: 10px 0 20px 0;
+}
+.thumbnail {
+  display: block;
+  padding: 10px;
+  border: 1px solid red;
+  background-color: transparent;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
+border-color: #428bca;
+}

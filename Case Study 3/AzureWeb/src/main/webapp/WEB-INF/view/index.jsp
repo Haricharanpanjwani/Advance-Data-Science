@@ -3,19 +3,32 @@
   <html>
       <head>
         <title>San Francisco Crime</title>
-      
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-          <!-- Optional theme -->
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
-          <!-- Latest compiled and minified JavaScript -->
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-        </head>
-    
+        <script type="text/javascript">
+        function isNumber(evt) {
+            evt = (evt) ? evt : window.event;
+            var charCode = (evt.which) ? evt.which : evt.keyCode;
+            if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                return false;
+            }
+            return true;
+        }
+        </script>
+        
+          <script type="text/javascript">
+            //<![CDATA[
+            try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"b274a8634124cafa9b77ae2d5fbebca3",petok:"0c4931b11db65e057eed90a30d0139b933bb7b0a-1470431826-1800",zone:"easy-development.com",rocket:"0",apps:{"abetterbrowser":{"ie":"7"}},sha2test:0}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=0489c402f5/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+            //]]>
+            </script>
+            <script src="resources/uff/jquery.js"></script>
+            <link href="resources/uff/animate.css" rel="stylesheet" type="text/css">
+            <script src="resources/uff/jquery-ultimate-fancy-form.min.js"></script>
+            <link href="resources/uff/jquery-ultimate-fancy-form.css" rel="stylesheet" type="text/css">
+            <link href="resources/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+            <script src="resources/assets/bootstrap/js/bootstrap.min.js"></script>
+            <script src="resources/assets/bootstrap/js/bootstrap.js"></script>
+            <link href="resources/assets/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+            <link href="resources/assets/registration/custom.css" rel="stylesheet" type="text/css">            
+      </head>    
     <body>    
     	<c:if test="${not empty error}">
     		<div class="form-group row">        	    	
@@ -35,15 +48,19 @@
 		    	</div>	    		    		    	
 	    	</div>
 	    </c:if>
-    	   
+    	<div class="nav-control">   
       <div class="container">
         <div class="form-group row">
-            <h2> San Francisco Crime Analysis </h2>
-         </div>
-      
+        	<div>
+           		<center><h2> San Francisco Crime Analysis </h2></center>
+            </div>
+        </div>
+        
+        <div class="clearfix"></div>
+
         <form method="POST" action="service">          
 
-          <div class="form-group row">
+          <div class="form-group row col-lg-4 col-lg-offset-2">
             <label for="region" class="col-sm-2 col-form-label">Region</label>
             <div class="col-sm-5">
               <select id="region" name="region" class="form-control">
@@ -61,7 +78,7 @@
             </div>
           </div>
 
-          <div class="form-group row">
+          <div class="form-group row col-lg-4 col-lg-offset-2">
             <label for="day" class="col-sm-2 col-form-label">Day of Week</label>
             <div class="col-sm-5">
               <select id="day" name ="day" class="form-control">
@@ -76,66 +93,67 @@
             </div>
           </div>
 
-          <div class="form-group row">
+          <div class="form-group row col-lg-4 col-lg-offset-2">
             <label for="date" class="col-sm-2 col-form-label">Date</label>
             <div class="col-sm-5">
               <input type="date" class="form-control" id="date" name="date" placeholder="Date">
             </div>
           </div>
 
-          <div class="form-group row">
+          <div class="form-group row col-lg-4 col-lg-offset-2">
             <label for="time" class="col-sm-2 col-form-label">Time (in Hours)</label>
             <div class="col-sm-5">
               <input type="number" class="form-control" id="time" name="time" placeholder="Time">
             </div>
           </div>
 
-          <div class="form-group row">
+          <div class="form-group row col-lg-4 col-lg-offset-2">
             <label for="latitude" class="col-sm-2 col-form-label">Latitude</label>
             <div class="col-sm-1">
               <input type="text"  class="form-control" id="latitude" value="-122." readonly="true">
             </div>
             <div class="col-sm-2">
-              <input type="number" max = 1000000 class="form-control" id="latitude" name="latitude" placeholder="Latitude">
+              <input type="number" max = 1000000 class="form-control" id="latitude" name="latitude" placeholder="Latitude" onkeypress="return isNumber(event)">
             </div>
           </div>
 
-          <div class="form-group row">
+          <div class="form-group row col-lg-4 col-lg-offset-2">
             <label for="longitude" class="col-sm-2 col-form-label">Longitude</label>
             <div class="col-sm-1">
               <input type="text" class="form-control" id="longitude" value="37." readonly="true">
             </div>
             <div class="col-sm-2">
-              <input type="number" max=1000000 class="form-control" id="longitude" name="longitude" placeholder="Longitude">
+              <input type="number" max=1000000 class="form-control" id="longitude" name="longitude" placeholder="Longitude" onkeypress="return isNumber(event)">
             </div>
           </div>
           
-          <div class="form-group row">
+          <div class="form-group row col-lg-4 col-lg-offset-2">
             <label for="predict" class="col-sm-2 col-form-label">Choose Model</label>            
-            <div class="col-sm-2">
-              <label class="radio-inline"><input type="radio" name="model" value="forest" checked="checked">Random Forest</label>
-			  <label class="radio-inline"><input type="radio" name="model" value="neural">Neural Network</label>
-			  <label class="radio-inline"><input type="radio" name="model" value="decision">Decision Jungle</label>
+            <div class="col-sm-6">
+              	<label class="radio-inline"><input type="radio" name="model" value="forest" checked="checked">Random Forest</label>
+			  	<label class="radio-inline"><input type="radio" name="model" value="neural">Neural Network</label>
+				<label class="radio-inline"><input type="radio" name="model" value="decision">Decision Jungle</label>
             </div>
-          </div>
-                    
-                  
-          <div class="form-group row" align="center">
-            <div class="offset-sm-2 col-sm-10">
-              <input type="submit" class="btn btn-primary" />
+          </div>                            
+            
+            <div class="form-group row">     
+	            <div class="col-lg-4 col-lg-offset-4">
+	              <input type="submit" class="btn btn-primary" />
+	            </div>
             </div>
-          </div>
         </form>        
       </div>
+
+      </div>
       
+      <div class="nav-control">
       <div class="form-group row">   
       		<c:if test="${not empty output}">
-      		<div class="alert alert-success">
-	      		<div class="col-sm-6">
+      		<div class="alert alert-success">	      		
 	      			<h3>Predicted crime by model is: <c:out value="${output}"></c:out></h3>
-	      		</div>
 	      	</div>
       		</c:if>
+      </div>
       </div>
       
   </body>

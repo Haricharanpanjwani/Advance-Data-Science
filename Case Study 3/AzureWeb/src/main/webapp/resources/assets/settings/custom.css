@@ -1,0 +1,155 @@
+ol,ul{list-style:none; padding: 0; margin: 0;}
+input , select { outline: none; }
+.clear {clear: both;}
+.p0 {padding: 0px !important;}
+.m0 {margin: 0px !important;}
+.fr {float: right !important;}
+.fl {float: left !important;}
+.tr {text-align: right !important;}
+.tl {text-align: left !important;}
+
+body {
+	background-image: url(bg.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-color: #000;
+	color: #fff;
+  min-height: 1000px;
+}
+
+.nav-control {
+  background-image: url(form-bg.png);
+  margin-bottom: 10px;
+}
+
+.nav-control > ul > li {
+  float: left;
+  width: 50%;
+  display: inline-block;
+}
+
+.nav-control > ul > li > a {
+  background: #ecf0f1;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+}
+
+.nav-control > ul > li > a:hover {
+  background: #3498db;
+  color: #ffffff;
+  }
+
+.nav-control > ul > li > a.active {
+  background: #2980b9;
+  color: #ffffff;
+}
+
+.form-container {
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 20px;
+}
+
+body > .container {
+	width: 960px;
+	padding-top: 5%;
+	margin: 0 auto;
+}
+
+h2 {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+/** Customizing the EM Select **/
+.jquery-em-interactive-container {
+  color: #3498db;
+}
+
+/** Make a smooth display with Story Box, we're going to add this **/
+[data-sb] {
+  opacity: 0;
+}
+
+/** The Sliding Container can have a few quirks, it is suggested we always use a width for each div **/
+form.uff-form-sliding > div.sliding-container > div {
+  width: 860px;
+}
+
+
+.form p , .form label , .form h5 {
+  color: #fff;
+  font-size: 14px;
+  margin: 0;
+}
+.form-group input , .form-group select {
+  width: 100%;
+  float: left;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  margin: 0;
+}
+.form p {
+  line-height: 1.42857143;
+  margin-bottom: 10px;
+}
+.form h2.title {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+}
+.form-group {
+  margin-bottom: 15px;
+  float: left;
+  width: 100%;
+}
+.form-group a {
+  color: #428bca;
+}
+.form-group label {
+  font-weight: bold;
+  text-align: right;
+  line-height: 2.5em;
+}
+.sub-title{
+  font-size: 18px;
+  color: #fff;
+}
+.left-section {
+  width: 18%;
+  float: left;
+  padding-right: 20px;
+}
+.right-section {
+    width: 82%;
+  float: right;
+}
+.right-section span {
+  line-height: 2em;
+}
+.alert {
+  margin: 0 ;
+}
+a.label {
+  padding: 5px 10px;
+}
+
+div.selector.focus:active span,
+div.selector:hover:active span,
+div.selector.active:hover span,
+div.selector.focus.active span {
+  background-position: initial !important;
+}
+div.selector span,
+div.selector:hover span ,
+div.selector.hover span ,
+div.selector:focus span {
+  background-position: initial !important;
+}

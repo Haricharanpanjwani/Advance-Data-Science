@@ -1,0 +1,101 @@
+ol,ul{list-style:none; padding: 0;}
+input , select { outline: none; }
+.clear {clear: both;}
+.p0 {padding: 0px !important;}
+.m0 {margin: 0px !important;}
+.fr {float: right !important;}
+.fl {float: left !important;}
+.tr {text-align: right !important;}
+.tl {text-align: left !important;}
+
+body {
+	background-image: url(bg.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-color: #000;
+	color: #fff;
+}
+
+.form-container {
+	background-image: url(form-bg.png);
+	padding: 20px;
+}
+
+body > .container {
+	width: 960px;
+	padding-top: 5%;
+	margin: 0 auto;
+}
+
+h2 {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+/** Customizing the EM Select **/
+.jquery-em-interactive-container {
+  color: #3498db;
+}
+
+/** Make a smooth display with Story Box, we're going to add this **/
+[data-sb] {
+  opacity: 0;
+}
+
+/** The Sliding Container can have a few quirks, it is suggested we always use a width for each div **/
+form.uff-form-sliding > div.sliding-container > div {
+  width: 860px;
+}
+
+label {
+	cursor: inherit;
+	padding: 0;
+}
+.form-group input {
+  width: 100%;
+  float: left;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  margin: 0;
+  border: 0;
+}
+.form h2.title {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+}
+.form-group {
+  margin-bottom: 15px;
+  float: left;
+  width: 100%;
+}
+.form-group label {
+  font-weight: bold;
+  text-align: right;
+  line-height: 2.5em;
+  font-size: 14px;
+}
+.left-section {
+  width: 15%;
+  float: left;
+  padding-right: 20px;
+}
+.right-section {
+  width: 85%;
+  float: right;
+}
+.alert {
+  margin: 0 ;
+}
+a.label {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.right-section span {
+	line-height: 2em;
+}
